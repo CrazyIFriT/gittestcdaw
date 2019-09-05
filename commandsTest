@@ -1,0 +1,2 @@
+vendor\bin\codecept run unit --coverage-html  "C:\Users\D. WEB\Documents\desarrollo\diccionary\coverage"
+vendor\bin\codecept run unit tests\unit\models\DiccionaryTest.php
