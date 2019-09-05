@@ -16,8 +16,11 @@ class DiccionaryTest extends \Codeception\Test\Unit
     {
         $model = new Diccionary(['word' => 'Hola', 'language' => 'EN', 'translate' => 'hello']);
         $model->save();
+        expect(Diccionary::translate("aaaa","EN"))->equals("aaaa");
         expect(Diccionary::translate("hola","EN"))->equals("hello");
     }
+
+
 
     /* public function testInsertnull(){
         $model = new Diccionary();
